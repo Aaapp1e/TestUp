@@ -1,0 +1,7 @@
+{% load menu_tag %}
+<ul>
+    {% for i in item %}
+    <li><a href='http://127.0.0.1:8000/menu/{{ i.name }}'>{{i.name}}</li>
+    {% draw_menu i.menu i  %}
+    {% endfor %}
+</ul>
